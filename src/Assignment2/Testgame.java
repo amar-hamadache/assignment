@@ -13,14 +13,13 @@ public class Testgame {
         sc.ready();
 
             sc.yn = vl.nextLine();
-            while (!(sc.yn == ("1")) && !(sc.yn == ("2"))) {
+            while (!(sc.yn.equals ("yes")) && !(sc.yn.equals ("no"))) {
                 sc.ready();
                 sc.yn = vl.nextLine();
         }
 
 
-
-        while (!(sc.yn == ("1")) && !(sc.yn == ("2")) && !(sc.yn == ("3"))) {
+        while (!(sc.yn.equals ("1")) && !(sc.yn == ("2")) && !(sc.yn == ("3"))) {
             System.out.println("pick 1, 2 or 3");
             sc.shuffleTheGame();
             sc.yn = vl.nextLine();
